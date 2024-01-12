@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+		/>
+		<style>
+			.parallax {
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				min-height: 400px;
+			}
+		</style>
+		<link rel="icon" type="image/x-icon" href="/public/company_logo.png" />
+		<title>Bakery Webpage with Parallax</title>
+	</head>
+	<body>
+		<nav class="container-fluid">
+			<ul>
+				<li><strong>Bakery Delights</strong></li>
+			</ul>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div
+			class="parallax"
+			style="
+				background-image: url('https://source.unsplash.com/featured/?bakery,cake');
+			"
+		></div>
+		<main class="container">
+			<div class="grid">
+				<section>
+					<hgroup>
+						<h2>Welcome to Bakery Delights</h2>
+						<h3>Your source for fresh, homemade baked goods</h3>
+					</hgroup>
+					<p>
+						Discover our wide range of delicious pastries, breads, and cakes,
+						all made with love and the finest ingredients.
+					</p>
+				</section>
+			</div>
+		</main>
+		<div
+			class="parallax"
+			style="
+				background-image: url('https://source.unsplash.com/featured/?bakery,bread');
+			"
+		></div>
+		<main class="container">
+			<div class="grid">
+				<section>
+					<h3>Our Story</h3>
+					<p>
+						Since 1995, Bakery Delights has been serving the community with
+						delightful baked goods. Our commitment to quality and taste has been
+						our cornerstone.
+					</p>
+				</section>
+			</div>
+		</main>
+		<div
+			class="parallax"
+			style="
+				background-image: url('https://source.unsplash.com/featured/?bakery,pastry');
+			"
+		></div>
+		<main class="container">
+			<div class="grid">
+				<section>
+					<h3>Visit Us</h3>
+					<p>
+						Come visit our cozy bakery! We're open daily from 8am to 6pm. Find
+						us at 123 Baking Street, Flavor Town.
+					</p>
+				</section>
+			</div>
+		</main>
+		<section aria-label="Subscribe">
+			<div class="container">
+				<article>
+					<hgroup>
+						<h2>Stay Updated!</h2>
+						<h3>Subscribe for News & Special Offers</h3>
+					</hgroup>
+					<form class="grid">
+						<input
+							type="text"
+							id="firstname"
+							name="firstname"
+							placeholder="Your Name"
+							aria-label="Your Name"
+							required
+						/>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="Your Email"
+							aria-label="Your Email"
+							required
+						/>
+						<button type="submit" onclick="event.preventDefault()">
+							Subscribe
+						</button>
+					</form>
+				</article>
+			</div>
+		</section>
+		<footer class="container">
+			<small>
+				<a href="#">Privacy Policy</a> • <a href="#">Terms of Use</a>
+			</small>
+		</footer>
+	</body>
+</html>
